@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contact-Phone Zone</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="css/skeleton.css" type="text/css">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+
+</head>
+<body>
+  <nav>
+    <h1 class="title">Phone Zone</h1>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="fahad's.html">Contact</a></li>
+        <li><a href="index.html">Cart</a></li>
+    </ul>        
+</nav>
+	 <section class="contact">
+    <div class="content" style="letter-spacing: 1.8px;">
+      <h2>Contact Us</h2>
+      <p>Phone Zone is a mobile phone selling platform, that devotes our hardwork to selling quality and superior phones that contributes to a better digital society. Contact us through email or phone to get more information on our services and fill the form below if you have an issue to report.</p>
+    </div>
+    <div class="container" align="left">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"><a href="Mapcontact.html"><i class="fa fa-map-marker" style="font-size:24px;"></i></a></div>
+        
+            <div class="text">
+              <h3>Address</h3>
+              <p> No.27 Bayero University, Kano Nigeria,<br> Open 7days a week,<br> 10 a.m to 7 p.m .</p>
+            </div>  
+        </div>
+
+        <div class="box">
+          <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>906-464-0156<br>818-099-1813<br>702-601-7602</p>
+            </div>  
+        </div>
+
+
+
+        <div class="box">
+          <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>phonezone@gmail.com</p>
+            </div>  
+        </div>
+
+
+      </div>
+      <div class="contactForm">
+        <form>
+          <h2 style="color: beige; letter-spacing: 1.8px">Send Messages</h2>
+          <div class="inputBox">
+            <input type="text" name="" required="required">
+            <span>Full Name</span>
+          </div>
+
+          <div class="inputBox">
+            <input type="text" name="" required="required">
+            <span>Email</span>
+          </div>
+
+          <div class="inputBox">
+            <textarea required="required"></textarea>
+            <span>Type your message</span>
+          </div>
+          <div class="inputBox">
+            <input type="submit" name="" required="required" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+  </section>
+
+  <style>
+@font-face {
+    font-family: LobFont;
+    src: url(LOB.ttf);
+}
+@keyframes slider {
+  from{background-position-x: right;}  
+  to{ background-position-x: 50%;}
+}
+@keyframes spacing {
+    from{letter-spacing: 2px;}
+    to {letter-spacing: 7px;}
+}
+
+  *
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'LobFont';
+}
+* ::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+body {
+  background-image: url("galaxy-s23-ultra-highlights-kv.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position-y: 0%;
+  /* background-position-x: right; */
+  /* animation: slider 8s linear 0s infinite forwards cubic-bezier(); */
+}
+body ::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+.inputBox{
+  border-radius: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.nav{
+    list-style-type: none;
+    text-decoration: none;
+    color: bisque;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;  
+}
+
+a{
+    color: bisque;
+}
+a:hover{
+    color: rgb(255, 163, 51);
+}
+.title{
+    letter-spacing: 2px;
+    color: beige;
+}
+.contact
+{
+  position: absolute;
+  left: 0;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  /* background: rgb(255, 255, 255);
+  background-image: url("background.jpeg"); */
+  background-size: cover;
+}
+
+.contact .content
+{
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2
+{
+  font-size: 36px;
+  font-weight: 500;
+  color: azure;
+
+}
+
+.contact .content p
+{
+  
+  font-weight: 300;
+  color: wheat;
+  transition: ease-out;
+}
+.contact .content h2:hover{
+  animation-name: spacing;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+    /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.container
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactInfo
+{
+  width: 50%;
+  display: flex;;
+  flex-direction: column;
+}
+
+.container .contactInfo .box
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon
+{
+  min-width: 60px;
+  height: 60px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+div.contactForm{
+  position: static;
+}
+
+.container .contactInfo .box .text
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: wheat;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text .h3
+{
+
+}
+
+.contactForm
+{
+  width: 40%;
+  padding: 40px;
+  /* background: white; */
+}
+
+.contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  letter-spacing: 1.5px;
+  background: bisque;
+  /* color: white; */
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+</style>
+
+
+
+
+</body>
+</html>

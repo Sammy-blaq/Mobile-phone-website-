@@ -1,0 +1,212 @@
+@font-face {
+    font-family: LobFont;
+    src: url(LOB.ttf);
+}
+@keyframes spacing {
+    from{letter-spacing: 0px; animation-delay: 100s;}
+    to {letter-spacing: 5px; animation-delay: 100s;}
+}
+@keyframes darken {
+    from{background-position-x: 10%;}
+    to{background-position-x: 90%;} 
+}
+@keyframes longer {
+    from{line-height: 30px; animation-play-state: running;}
+    to{line-height: 32px; animation-play-state: paused;}
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'LobFont';
+}
+* ::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+
+body {
+    background-color: black;
+    background-image: url('GalaxyZFilp5G_Mystic_Gray_3D.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-x: right; */
+    /* backdrop-filter: 12px; */
+    background-position: center;
+    /* background-clip: initial; */
+    /* background-blend-mode: color-dodge; */
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.nav{
+    list-style-type: none;
+    text-decoration: none;
+    color: bisque;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;  
+}
+
+a{
+    color: bisque;
+}
+a:hover{
+    color: rgb(255, 163, 51);
+}
+.title{
+    letter-spacing: 2px;
+    color: beige;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1 {
+    font-size: 50px;
+    color: bisque;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1:hover{
+    animation-name: spacing;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin:0 auto;
+    background-color: azure;
+}
+.subheading{
+    font-size: 18px;
+    color: aquamarine;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about image img{
+    max-width: 200%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about image:hover img{
+    transform: scale(1,2);
+}
+.about_content{
+    flex: 1;
+    /* background-color: dimgray; */
+    opacity: 1;
+}
+.about_content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: bisque;
+    text-align: center;
+}
+.about_content h2:hover{
+    animation-name: spacing;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.about_content p{
+    font-size:18px;
+    line-height: 1.5;
+    color: aquamarine;    
+    
+}
+.about_content p:hover{
+    color: rgb(255, 226, 61);
+    animation-name: longer;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* text-decoration: solid; */
+    /* -webkit-text-stroke: wheat; */
+    /* -webkit-text-stroke-width: 0.5px; */
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* -webkit-text-stroke-color: white; */
+}
+.about_content.read more{
+    display: inline-block;
+    padding: 10px 20px;
+    
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about_content.read-more:hover{
+    background-color: #3e8e41;
+}
+media screen and {max-width:768px} 
+    .heading{
+        padding:0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about_content p{
+        padding:0px;
+        font-stretch: 16px;
+    }
+    .about_content.read-more{
+        font-size: 16px;
+    }
